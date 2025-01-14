@@ -1,0 +1,245 @@
+
+
+@media (max-width: 760px) {
+
+    .container {
+        position: relative;
+        max-width: 760px;
+        margin: 0 auto;
+        height: 110vh;
+        background-image: url(../images/background-img.png);
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 40px 30px;
+    }
+    header .header-logo h2 {
+        font-size: 30px;
+    }
+    header nav {
+      gap: 20px;
+    }
+    header nav a {
+      font-size: 14px;
+    }
+    header .savat p {
+      top: 0px;
+      right: -7px;
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+    }
+    .text {
+      margin-top: 40px;
+    }
+    .text h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .text p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .search {
+      margin-top: 30px;
+    width: 300px !important;
+      
+
+      input {
+        width: 50%;
+      }
+    }
+
+
+
+
+    .position-img {
+        display: none;
+    }
+
+
+
+
+
+ .section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   gap: 30px !important;
+
+    .none {
+        display: none;
+    }
+ }
+
+
+ .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px !important;
+
+
+
+    .card {
+
+        h2 {
+            font-size: 18px !important;
+
+        }
+
+        p {
+            font-size: 12px !important;
+        }
+
+        .more {
+            font-size: 12px !important;
+        }
+    }
+ }
+
+
+ .section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px !important;
+    margin-top: 0px !important;
+
+
+    .images {
+        display: flex;
+
+
+        .img-2 {
+            display: none;
+        }
+
+        .img-3 {
+            display: none;
+        }
+    }
+ }
+
+
+ .section-4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 80px !important;
+    margin-top: 80px !important;
+
+    .ss-img {
+       display: flex !important;
+     align-items: center;
+     justify-content: center;
+    }
+
+    .ss-img-2 :nth-child(1) {
+      display: none;
+
+    }
+    .ss-img-2 :nth-child(2) {
+        display: none;
+    }
+
+ }
+
+
+
+.section-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px !important;
+    margin-top: 100px !important;
+
+
+    .swiper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+          
+            :nth-child(4) {
+                display: none;
+            }
+            :nth-child(5) {
+                display: none;
+            }
+            :nth-child(6) {
+                display: none;
+            }
+            :nth-child(7) {
+                display: none;
+            }
+
+            :nth-child(8) {
+                display: none;
+            }
+
+            :nth-child(9) {
+                display: none;
+            }
+                }
+    }
+
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px !important;   
+
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px !important;
+
+
+        .item-1 {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 100px !important;
+
+        }
+    }
+
+
+    .line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 120px !important;
+        margin-top: 50px !important;
+    }
+
+}
+
+
+
+
+
+}
