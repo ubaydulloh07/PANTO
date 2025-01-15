@@ -241,5 +241,82 @@ footer {
 
 
 
-
 }
+
+
+
+
+/* Kichik ekranlarda carousel uchun */
+@media screen and (max-width: 760px) {
+    .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+    }
+  
+    .slider {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 10px;
+      overflow-x: auto; /* Gorizontal skroll */
+      scroll-behavior: smooth; /* Yaxshi o'tish animatsiyasi */
+      padding: 20px 0;
+    }
+  
+    .slider::-webkit-scrollbar {
+      display: none; /* Scrollbarni yashirish */
+    }
+  
+    .slider-item {
+      flex: 0 0 calc(50% - 10px); /* Ikkita ustun */
+      box-sizing: border-box;
+      background-color: #FAFAFA;
+      margin: 0;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .slider-item img {
+      width: 100px;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    .item-details {
+      padding: 10px;
+      background-color: #FFFFFF;
+      border-radius: 0 0 10px 10px;
+      text-align: left;
+    }
+  
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: white;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-out;
+    }
+  
+    .slider-button:hover {
+      background-color: #cecdcc;
+    }
+  
+    .slider-button.prev-slide {
+      left: 10px;
+    }
+  
+    .slider-button.next-slide {
+      right: 10px;
+    }
+  }
+  
+  

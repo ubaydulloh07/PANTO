@@ -105,10 +105,13 @@ header .savat p {
   color: rgb(255, 255, 255);
 }
 .text .search {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 22%;
+}
+.text .search input {
+  width: 100%;
   padding: 20px 10px 20px 20px;
   height: 50px;
   background: rgba(255, 255, 255, 0.15);
@@ -121,13 +124,10 @@ header .savat p {
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
-.text .search input {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  padding: 10px;
+.text .search img {
+  position: absolute;
+  top: 25px;
+  right: 10px;
 }
 
 .position-img .position-1 {
@@ -201,6 +201,258 @@ header .savat p {
   font-weight: 500;
   font-size: 16px;
   color: rgb(229, 132, 17);
+}
+
+.product-section {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+
+.container-box {
+  width: 100%;
+  padding: 50px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container-box h3 {
+  font-family: "Gilroy-Bold";
+  font-size: 42px;
+  line-height: 49.22px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #1E1E1E;
+}
+
+.container-box a {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  line-height: 25.9px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #E58411;
+}
+
+.product-categories {
+  margin: 20px 0;
+  width: auto;
+  padding: 6px;
+  border-radius: 44px;
+  background-color: #EEEEEE;
+}
+
+.product-categories button {
+  border: none;
+  background-color: #EEEEEE;
+  padding: 7px 19.5px;
+  border-radius: 32px;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 33.3px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #1E1E1E;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.product-categories button:hover {
+  background-color: rgb(223, 222, 222);
+}
+
+.product-categories .active {
+  background-color: #FFFFFF;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 95%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.slider-item {
+  position: relative;
+  min-width: 24%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+}
+
+.slider-item img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.item-details {
+  position: relative;
+  width: 100%;
+  margin-top: 220px;
+  background-color: #FFFFFF;
+  padding: 8px 20px 20px 20px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.item-details img {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  width: 100px;
+  height: 20px;
+}
+
+.item-details p {
+  font-family: "Inter";
+  font-size: 16.76px;
+  font-weight: 400;
+  line-height: 20.28px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.item-details h3 {
+  font-family: "Inter";
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 25.81px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.item-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.cost {
+  display: flex;
+  align-items: start;
+  gap: 3px;
+  font-family: "Inter";
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 25.81px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #0D1B39;
+}
+
+.cost span {
+  font-family: "Inter";
+  font-size: 15.23px;
+  font-weight: 600;
+  line-height: 18.43px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #0D1B39;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-to-cart .count-display {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.81px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #0D1B39;
+}
+
+.add-to-cart .cart-add-btn {
+  background-color: #0D1B39;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: all 0.3s ease-out;
+}
+
+.slider-button:hover {
+  background-color: #cecdcc;
+}
+
+.slider-button.prev-slide {
+  left: -20px;
+}
+
+.slider-button.next-slide {
+  right: -20px;
 }
 
 .section-3 {
@@ -364,18 +616,39 @@ header .savat p {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
+.content-box {
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%; /* Moslashuvchan kenglik */
+}
+
+.content-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 760px) {
+  .content-box {
+    padding: 15px;
+    font-size: 14px;
+    width: 95%; /* Kichik ekranlarda kenglik to'liq bo'ladi */
+  }
+}
 footer {
   display: flex;
   align-items: center;
@@ -413,72 +686,72 @@ footer .content .item-1 p {
   color: rgb(30, 30, 30);
   line-height: 24px;
 }
-footer .content .product {
+footer .content .productss {
   display: flex;
   align-items: start;
   justify-content: start;
   gap: 100px;
 }
-footer .content .product .item-2 {
+footer .content .productss .item-22 {
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
   gap: 16px;
 }
-footer .content .product .item-2 :nth-child(1) {
+footer .content .productss .item-22 :nth-child(1) {
   font-size: 16px;
   font-weight: 400;
   color: rgb(246, 151, 63);
 }
-footer .content .product .item-2 :nth-child(2) {
-  font-size: 16px;
-  font-weight: 400;
-  color: rgb(30, 30, 30);
-}
-footer .content .product .item-2 :nth-child(2):hover {
-  color: rgb(246, 151, 63);
-}
-footer .content .product .item-2 :nth-child(3) {
+footer .content .productss .item-22 :nth-child(2) {
   font-size: 16px;
   font-weight: 400;
   color: rgb(30, 30, 30);
 }
-footer .content .product .item-2 :nth-child(3):hover {
+footer .content .productss .item-22 :nth-child(2):hover {
   color: rgb(246, 151, 63);
 }
-footer .content .product .item-2 :nth-child(4) {
+footer .content .productss .item-22 :nth-child(3) {
   font-size: 16px;
   font-weight: 400;
   color: rgb(30, 30, 30);
 }
-footer .content .product .item-2 :nth-child(4):hover {
+footer .content .productss .item-22 :nth-child(3):hover {
   color: rgb(246, 151, 63);
 }
-footer .content .product .item-3 {
+footer .content .productss .item-22 :nth-child(4) {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(30, 30, 30);
+}
+footer .content .productss .item-22 :nth-child(4):hover {
+  color: rgb(246, 151, 63);
+}
+footer .content .productss .item-3 {
   display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: column;
   gap: 16px;
 }
-footer .content .product .item-3 :nth-child(1) {
+footer .content .productss .item-3 :nth-child(1) {
   font-size: 16px;
   font-weight: 400;
   color: rgb(246, 151, 63);
 }
-footer .content .product .item-3 .social {
+footer .content .productss .item-3 .social {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
 }
-footer .content .product .item-3 .social a {
+footer .content .productss .item-3 .social a {
   font-size: 16px;
   font-weight: 400;
   color: rgb(30, 30, 30);
 }
-footer .content .product .item-3 .social a:hover {
+footer .content .productss .item-3 .social a:hover {
   color: rgb(246, 151, 63);
 }
 footer .line {
@@ -681,6 +954,69 @@ footer .line .terms p {
     justify-content: center;
     gap: 120px !important;
     margin-top: 50px !important;
+  }
+}
+/* Kichik ekranlarda carousel uchun */
+@media screen and (max-width: 760px) {
+  .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto; /* Gorizontal skroll */
+    scroll-behavior: smooth; /* Yaxshi o'tish animatsiyasi */
+    padding: 20px 0;
+  }
+  .slider::-webkit-scrollbar {
+    display: none; /* Scrollbarni yashirish */
+  }
+  .slider-item {
+    flex: 0 0 calc(50% - 10px); /* Ikkita ustun */
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    margin: 0;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  .slider-item img {
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+  }
+  .item-details {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+  }
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+  }
+  .slider-button:hover {
+    background-color: #cecdcc;
+  }
+  .slider-button.prev-slide {
+    left: 10px;
+  }
+  .slider-button.next-slide {
+    right: 10px;
   }
 }
 * {

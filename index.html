@@ -32,7 +32,7 @@
 
         <div class="savat">
           <img src="./icons/Bag.png" alt="" />
-          <p>0</p>
+          <p class="bag-counter">0</p>
         </div>
       </header>
 
@@ -46,10 +46,10 @@
           and modern with ease and speed
         </p>
 
-        <div class="search">
+        <form class="search">
           <input type="text" placeholder="Search furniture" />
           <img src="./icons/search.png" alt="" />
-        </div>
+        </form>
       </div>
       <div class="position-img">
         <img class="position-1" src="./icons/position-1.png" alt="" />
@@ -110,6 +110,144 @@
               <img src="./icons/strelka.png" alt="" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div class="container-box">
+          <h3>Best Selling Product</h3>
+          <div class="product-categories">
+            <button data-category="seat">Chair</button>
+            <button data-category="sleepers">Beds</button>
+            <button data-category="couches">Sofa</button>
+            <button data-category="lights">Lamp</button>
+          </div>
+          <div class="slider-wrapper">
+            <button class="slider-button prev-slide">&#8592;</button>
+            <div class="slider">
+              <div class="slider-item seat">
+                <img src="./images/stul-1.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Sakarias Armchair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$392</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item sleepers">
+                <img src="./images/stul-2.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Baltsar Chair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$299</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item couches">
+                <img src="./images/stul-3.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Anjay Armchair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$519</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item lights">
+                <img src="./images/stul-4.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Nyantuy Chair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$921</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item seat">
+                <img src="./images/stul-1.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Sakarias Armchair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$392</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="slider-item sleepers"
+                data-aos="fade-left"
+                data-aos-delay="800"
+              >
+                <img src="./images/stul-2.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Baltsar Chair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$299</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item couches">
+                <img src="./images/stul-3.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Anjay Armchair</h3>
+                  <img src="./images/star.png" alt="" />
+                  <div class="item-pricing">
+                    <p class="cost">$519</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item lights">
+                <img src="./images/stul-4.png" alt="Sakarias Armchair" />
+                <div class="item-details">
+                  <p>Chair</p>
+                  <h3>Nyantuy Chair</h3>
+                  <img src="./images/star.png" alt="" />
+
+                  <div class="item-pricing">
+                    <p class="cost">$921</p>
+                    <div class="add-to-cart">
+                      <button class="cart-add-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-button next-slide">&#8594;</button>
+          </div>
+          <a href="#" data-aos="fade-up">
+            View All <img src="./icons/strelka.png" alt="" />
+          </a>
         </div>
       </section>
 
@@ -179,38 +317,43 @@
           <h2>Testimonials</h2>
           <h1>Our Client Reviews</h1>
         </div>
+
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./images/carusel-1.png" alt="" />
+              <div class="content-box">
+                <img src="./images/carusel-1.png" alt="" />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="./images/carusel-2.png" alt="" />
+              <div class="content-box">
+                <img src="./images/carusel-2.png" alt="" />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="./images/carusel-3.png" alt="" />
+              <div class="content-box">
+                <img src="./images/carusel-3.png" alt="" />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="./images/carusel-1.png" alt="" />
+              <div class="content-box">
+                <img src="./images/carusel-1.png" alt="" />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="./images/carusel-2.png" alt="" />
+              <div class="content-box">
+                <img src="./images/carusel-2.png" alt="" />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="./images/carusel-3.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carusel-1.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carusel-2.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carusel-3.png" alt="" />
+              <div class="content-box">
+                <img src="./images/carusel-3.png" alt="" />
+              </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
+          <!-- Navigatsiya tugmalari -->
           <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
     </main>
@@ -225,15 +368,15 @@
             and all-around facilities.
           </p>
         </div>
-        <div class="product">
-          <div class="item-2">
+        <div class="productss">
+          <div class="item-22">
             <a href="">Services</a>
             <a href="">Email Marketing</a>
             <a href="">Campaigns</a>
             <a href="">Branding</a>
           </div>
 
-          <div class="item-2">
+          <div class="item-22">
             <a href="">Furniture</a>
             <a href="">Beds</a>
             <a href="">Chair</a>
